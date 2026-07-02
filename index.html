@@ -3,89 +3,152 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AXVORA</title>
+
+<title>AXVORA | Luxury Accessories</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-background:#0a0a0a;
-color:#fff;
-font-family:'Inter',sans-serif;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-text-align:center;
-padding:20px;
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#111;
+}
+
+header{
+    width:100%;
+    padding:25px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
-font-size:52px;
-font-weight:700;
-letter-spacing:10px;
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+    letter-spacing:6px;
 }
 
-.tagline{
-margin-top:16px;
-font-size:16px;
-color:#8a8a8a;
-letter-spacing:2px;
+nav a{
+    text-decoration:none;
+    color:#111;
+    margin-left:35px;
+    font-size:15px;
+}
+
+.hero{
+    height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#666;
+    max-width:600px;
+    margin:auto;
+    line-height:1.8;
 }
 
 .button{
-display:inline-block;
-margin-top:40px;
-padding:15px 36px;
-border:1px solid #fff;
-border-radius:50px;
-text-decoration:none;
-color:#fff;
-font-weight:600;
-transition:.3s;
+    display:inline-block;
+    margin-top:40px;
+    padding:15px 45px;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
 }
 
 .button:hover{
-background:#fff;
-color:#000;
+    background:#333;
 }
 
-.footer{
-margin-top:45px;
-font-size:13px;
-color:#555;
+footer{
+    padding:30px;
+    text-align:center;
+    color:#888;
+    border-top:1px solid #eee;
 }
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:48px;
+}
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+nav a{
+margin:0 10px;
+}
+
+}
+
 </style>
 
 </head>
-
 <body>
+
+<header>
+
+<div class="logo">
+AXVORA
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Collections</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
 
 <div>
 
-<div class="logo">AXVORA</div>
+<h1>Luxury Accessories</h1>
 
-<div class="tagline">
-Premium Accessories
-</div>
+<p>
+Minimal design. Timeless style.
+Crafted to elevate your everyday look.
+</p>
 
-<a class="button" href="https://www.instagram.com/axvora.in" target="_blank">
-FOLLOW @AXVORA.IN
-</a>
-
-<div class="footer">
-Launching Soon
-</div>
+<a href="#" class="button">Explore Collection</a>
 
 </div>
+
+</section>
+
+<footer>
+
+© 2026 AXVORA. All Rights Reserved.
+
+</footer>
 
 </body>
 </html>
